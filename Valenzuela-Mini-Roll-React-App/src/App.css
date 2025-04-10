@@ -1,0 +1,85 @@
+/* General App styles */
+.App {
+  font-family: 'Arial', sans-serif; /* Adding a clean font */
+  background-color: #f4f4f9; /* Light background color for the page */
+  color: #333; /* Dark text color for better readability */
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a soft shadow around the app */
+}
+
+/* Title style */
+.App h1 {
+  font-size: 2.5rem; /* Larger, bold font for the main title */
+  color: #4CAF50; /* Green color for the title */
+  margin-bottom: 30px;
+  text-transform: uppercase; /* Making the title uppercase */
+}
+
+/* Poll Option styles */
+.poll-option {
+  background-color: #fff; /* White background for each option */
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  width: 80%; /* Make it responsive */
+  max-width: 400px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for each option */
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Poll Option Hover Effect */
+.poll-option:hover {
+  transform: scale(1.05); /* Slightly enlarge the option on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Vote button style */
+button {
+  background-color: #4CAF50; /* Green button background */
+  color: white; /* White text */
+  padding: 12px 30px; /* Larger padding for a bigger button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Increase font size */
+  transition: background-color 0.3s, transform 0.2s ease; /* Smooth transitions for color and scale */
+}
+
+/* Vote button Hover Effect */
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Enlarge the button slightly on hover */
+}
+
+/* Current Leader Section */
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .poll-option {
+    width: 90%;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
